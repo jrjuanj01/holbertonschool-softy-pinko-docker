@@ -10,4 +10,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get install python3 -y && apt-ge
 
 RUN pip install flask --break-system-packages
 
+RUN pip install flask-cors --break-system-packages
+
 CMD ["python3", "api.py"]
